@@ -1,0 +1,103 @@
+.postParentDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moreView, .recommendations {
+  width: 90%;
+  margin: 16px 16px 24px;
+  padding: 16px 16px 32px;
+  background-color: #ebeeef;
+  border-radius: 4px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heading :first-child {
+  font-size: 24px;
+  color: #002f34;
+}
+
+.heading :last-child {
+  font-size: 14px;
+  color: #002f34;
+}
+
+.moreView .cards, .recommendations .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+  width: 300px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .favorite {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 16px;
+}
+
+.card .image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+
+.card .content .rate {
+  font-size: larger;
+  font-weight: bold;
+  color: #002f34;
+}
+
+.card .content .kilometer {
+  font-size: medium;
+  color: #707070;
+}
+
+.card .content .name {
+  font-size: small;
+  color: #707070;
+}
+
+.card .date {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  color: #707070;
+}
+
+.recommendations .heading span {
+  font-size: 24px;
+  color: #002f34;
+}
